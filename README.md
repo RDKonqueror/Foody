@@ -28,7 +28,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/RDKonqueror/claymorphic-calendar
 
 # Install dependencies
-$ npm install react-calendar
+$ npm install @material-ui/core
+$ npm install @material-ui/icons
 
 # Run the app
 $ npm start
