@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/* MainSec */
+
+.main {
+  display: flex;
+}
+.main .container {
+  width: 60%;
+  padding: 5% 5% 5% 6%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.logo {
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #fb6542;
+  font-family: 'Krona One', sans-serif;
+}
+.reg a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.reg a:first-child {
+  color: #171b1b;
+}
+.reg a:first-child:hover {
+  color: #fb6542;
+}
+.reg a:nth-child(2) {
+  background-color: #171b1b;
+  color: #fff;
+}
+.slidetxt {
+  font-size: 36px;
+  margin: 55px 0 10px 0;
+  font-weight: 700;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.slidetxt div {
+  animation: slideAnime 12s 3s infinite;
+  position: absolute;
+}
+.slidetxt span {
+  display: block;
+  height: 45px;
+  color: #2a3132;
+}
+@keyframes slideAnime {
+  0% {
+    top: 0;
+  }
+  6.25%, 25% {
+    top: -45px;
+  }
+  31.25%, 50% {
+    top: -90px;
+  }
+  56.25%, 75% {
+    top: -135px;
+  }
+  81.25%, 100% {
+    top: -180px;
+  }
+}
+.main .container p {
+  font-size: 20px;
+  color: #505160;
+}
+.searchbox {
+  position: relative;
+  margin: 45px 0;
+  height: 58px;
+}
+.searchbox input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid #bcbabe;
+  font-size: 16px;
+  outline: none;
+}
+.searchbox input:focus {
+  border: 1px solid #fb6542;
+}
+.btn-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 58px;
+  overflow: hidden;
+}
+.cities, .cities a, h5 {
+  color: #555;
+}
+h5 {
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.cities a {
+  padding: 8px 8px 0 0;
+  display: inline-block;
+  font-size: 14px;
+}
+.cities a:nth-child(1), .cities a:nth-child(3), .cities a:nth-child(5), .cities a:nth-child(7), .cities a:nth-child(9) {
+  color: #222;
+}
+.img-container {
+  height: 90vh;
+  width: 45%;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Service */
+
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10%;
+  padding: 0 5%;
+  height: 400px;
+  align-items: center;
+  background-color: #2c2015;
+}
+.services div {
+  text-align: center;
+}
+.services div h3 {
+  text-transform: capitalize;
+  color: #fff;
+  margin: 10px 0;
+}
+.services div p {
+  color: rgba(255, 255, 255, .6);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* MobileApp */
+
+.download {
+  background: url("bg2.jpg") top no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+.download div {
+  padding: 10%;
+  background-color: rgba(0, 0, 0, .5);
+  height: 100%;
+}
+.download p {
+  color: rgba(255, 255, 255, .9);
+  font-size: 38px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  width: 40%;
+  letter-spacing: 2px;
+}
+.download a {
+  margin: 10px;
+}
+.download img {
+  height: 170px;
+  width: 210px;
+}
+
+/* FooterSec */
+
+footer {
+  padding: 20px;
+  background-color: #0d0f0f;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 50px 8%;
+  justify-content: space-between;
+}
+footer .container a {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+}
+footer .container a:hover {
+  color: #fff;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  border-top: 1px solid #fff;
+  padding: 0 5%;
+  color: #fff;
+}
+.copyright div {
+  font-size: 20px;
+  font-family: 'Krona One', sans-serif;
+}
+.copyright p {
+  font-size: 14px;
+}
+.socials {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.socials>*:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.form {
+  height: 95vh;
+  width: 450px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  /* right: -460px; */
+  top: 0;
+  padding: 40px 5%;
+  box-shadow: -1px 1px 7px #000;
+  transition: .3s;
+}
+.form>span {
+  color: #2a3132;
+  cursor: pointer;
+}
+.form>span:hover {
+  color: #000;
+}
+.form h1, .form p {
+  color: #2a3132;
+  padding-top: 10px;
+}
+.form p {
+  font-size: 14px;
+}
+.form p a {
+  color: #fb6542;
+  font-weight: 500;
+}
+form a {
+  font-size: 14px;
+  color:#2f7aa5;
+}
